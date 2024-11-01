@@ -1,0 +1,22 @@
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    width: auto;
+    display: block;
+    margin: 0 auto 0 2.4rem;
+  }
+
+  @media (min-width: 1440px) {
+    margin-right: 7.4rem;
+  }
+
+  a {
+    font-size: 2.4rem;
+    line-height: 127.7%;
+    letter-spacing: -0.02em;
+    color: var(--black_2);
+  }
+}

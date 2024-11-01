@@ -1,0 +1,11 @@
+section {
+  padding: 2rem 0;
+
+  @media (min-width: 768px) {
+    padding: 4rem 0;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 6rem 0;
+  }
+}

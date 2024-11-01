@@ -1,0 +1,23 @@
+.socials {
+  display: flex;
+  margin-bottom: 1rem;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
+
+  li {
+
+    a {
+      height: 4rem;
+      width: 4rem;
+      display: block;
+      fill: var(--gray_2);
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  } 
+}

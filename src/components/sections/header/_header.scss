@@ -1,0 +1,22 @@
+.header {
+  padding: 2.4rem 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      align-items: unset;
+      justify-content: space-between;
+    }
+
+    .nav ul li a {
+
+      &:hover {
+        color: var(--black_1);
+        transition: color linear 0.5s;
+      }
+    }
+  }
+}

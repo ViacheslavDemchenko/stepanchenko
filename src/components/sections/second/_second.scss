@@ -1,0 +1,120 @@
+.second {
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+
+    @media (min-width: 768px) {
+      margin-top: 6rem;
+    }
+  }
+
+  .btn {
+    padding: 1.15rem 3.532rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--white_3);
+    background: linear-gradient(180deg, #41297D 0%, #472D88 100%);
+    border-radius: 1.8rem;
+
+    &:hover {
+      background: var(--gray_3);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 3.7rem;
+      background: var(--white_3);
+      color: var(--purple_3);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-right {
+      display: flex;
+    }
+  }
+
+  .slider_1 {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    left: 0;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100vw;
+
+    .swiper-slide {
+      max-width: 32.6rem !important;
+      border: 1px solid var(--white_4);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+
+      // @media (min-width: 768px) {
+      //   max-width: 25.1rem;
+      // }
+
+      // @media (min-width: 1440px) {
+      //   width: 32.6rem !important;
+      // }
+
+      &__img {
+        position: relative;
+        margin-bottom: 1.2rem; 
+
+        .price {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          padding: 0.3rem 1.73rem;
+          background: var(--white_3);
+          border-radius: 10rem;
+          font-size: 1.6rem;
+          line-height: 2.1rem;
+          text-align: center;
+          color: var(--black_1);
+
+          span {
+            color: var(--gray_2);
+          }
+        }
+
+        img {
+          // display: block;
+          // width: 100%;
+          // height: 100%;
+          // object-fit: cover;
+          border-radius: 0.5rem;
+        }
+      }
+
+      &__text {
+        padding: 0 2rem 2rem 2rem;
+
+        h2 {
+          margin-bottom: 1.2rem;
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+          color: var(--black_1);
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 1.6rem;
+          color: var(--gray_2);
+
+          @media (min-width: 768px) {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+          }
+        }
+      }
+    }
+  }
+}

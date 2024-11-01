@@ -1,0 +1,14 @@
+/* FONTS */
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('../fonts/Roboto Slab.svg#CenturyGothic') format('svg'),
+       url('../fonts/Roboto Slab.ttf') format('truetype'),
+       url('../fonts/Roboto Slab.woff') format('woff'),
+       url('../fonts/Roboto Slab.eot'),
+       url('../fonts/Roboto Slab.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Roboto Slab.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
