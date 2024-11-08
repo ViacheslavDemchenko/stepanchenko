@@ -22,32 +22,32 @@
     background-color: var(--black_2);
     transition: all 0.3s ease;
     
-    &--top {
+    &_top {
       top: 0;
     }
     
-    &--middle {
+    &_middle {
       top: 50%;
       transform: translateY(-50%);
     }
     
-    &--bottom {
+    &_bottom {
       bottom: 0;
     }
   }
 }
 
-.burger--active {
-  .burger__line--top {
+.burger_active {
+  .burger__line_top {
     top: 50%;
     transform: translateY(-50%) rotate(45deg);
   }
 
-  .burger__line--middle {
+  .burger__line_middle {
     opacity: 0;
   }
 
-  .burger__line--bottom {
+  .burger__line_bottom {
     bottom: 50%;
     transform: translateY(50%) rotate(-45deg);
   }

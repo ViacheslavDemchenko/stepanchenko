@@ -1,16 +1,16 @@
 .nav-wrap
   nav.nav
-    ul(role="menu")
-      li(role="menuitem")
-        a(href="#about").active О компании
-      li(role="menuitem")
-        a(href="#services") Услуги
-      li(role="menuitem")
-        a(href="#vacancies") Вакансии
-      li(role="menuitem")
-        a(href="#contacts") Контакты
+    ul.nav__list(role="menu")
+      li.nav__list__item(role="menuitem")
+        a.nav__list__item__link.nav__list__item__link_active(href="#about") О компании
+      li.nav__list__item(role="menuitem")
+        a.nav__list__item__link(href="#services") Услуги
+      li.nav__list__item(role="menuitem")
+        a.nav__list__item__link(href="#vacancies") Вакансии
+      li.nav__list__item(role="menuitem")
+        a.nav__list__item__link(href="#contacts") Контакты
   .contacts
-    .phone.phone--mobile
+    .phone.phone_mobile
       a(href="tel:88000000000") 8 800 000 00 00
     .email
       a(href="mailto:info@stepanchenko.me") info@stepanchenko.me

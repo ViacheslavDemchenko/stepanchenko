@@ -23,13 +23,13 @@
     justify-content: center;
     align-items: center;
     background: var(--white_2);
-    box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     border: 0 solid rgba(0, 0, 0, 0.5);
 
     @media (min-width: 768px) {
-      width: 4rem;
-      height: 4rem;
+      width: 3.7rem;
+      height: 3.7rem;
     }
   }
 
@@ -42,106 +42,30 @@
     }
   }
 
-  .arrow-left,
-  .arrow-right {
-    position: relative;
-    top: 0.2rem;
-    width: 1.1rem;
-    height: 0.2rem;
-    background: var(--black_1);
-
-    @media (min-width: 768px) {
-      top: 0.4rem;
-      width: 2rem;
-    }
-  }
-    
-  .arrow-left,
-  .arrow-right {
-
-    &::after,
-    &::before {
-      position: absolute;
-      content: "";
-      width: 0.6rem;
-      height: 0.15rem;
-      background: var(--black_1);
-
-      @media (min-width: 768px) {
-        width: 1.1rem;
-        height: 0.2rem;
-      }
-    }
+  .right-first,
+  .right-second {
+    background: url("../img/icons/arrow-right.svg") no-repeat;
+    background-size: 70% 70%;
+    background-position: center center;
   }
 
-  .arrow-left {
-
-    &::after,
-    &::before {
-      left: 0.1rem;
-
-      @media (min-width: 768px) {
-        left: 0;
-      }
-    }
-
-    &::after {
-      transform: rotate(-36deg);
-    }
-
-    &::before {
-      transform: rotate(36deg);
-    }
+  .left-first,
+  .left-second {
+    background: url("../img/icons/arrow-left.svg") no-repeat;
+    background-size: 70% 70%;
+    background-position: center center;
   }
 
-  .arrow-right {
+.next.left-second.swiper-button-disabled,
+.next.left-first.swiper-button-disabled {
+  background: url("../img/icons/arrow-left-disabled.svg") no-repeat;
+  background-size: 70% 70%;
+  background-position: center center;
+}
 
-    &::after,
-    &::before {
-      right: 0.1rem;
-
-      @media (min-width: 768px) {
-        right: 0;
-      }
-    }
-
-    &::after {
-      transform: rotate(36deg);
-    }
-
-    &::before {
-      transform: rotate(-36deg);
-    }
-
-  }
-
-  .arrow-left,
-  .arrow-right {
-
-    &::after {
-      bottom: 0.4rem;
-
-      @media (min-width: 768px) {
-        bottom: 0.4rem;
-      }
-    }
-
-    &::before {
-      bottom: -0.2rem;
-
-      @media (min-width: 768px) {
-        bottom: -0.4rem;
-      }
-    }
-  }
-
-.swiper-button-disabled {
-  .arrow-left,
-  .arrow-right {
-
-    &::after,
-    &::before {
-      background: var(--purple_3);
-    }
-  }
+.prev.right-second.swiper-button-disabled,
+.prev.right-first.swiper-button-disabled {
+  background: url("../img/icons/arrow-right-disabled.svg") no-repeat;
+  background-size: 70% 70%;
+  background-position: center center;
 }

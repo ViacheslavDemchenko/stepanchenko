@@ -3,12 +3,12 @@ require('svgxuse'); // Полифил для поддержки IE11+ и ста�
 
 
 import mobileMenu from './modules/mobileMenu'; // Мобильное меню
-import slider_main from './modules/slider_main';
-import slider_1 from './modules/slider_1';
-import slider_2 from './modules/slider_2';
+import sliderFirst from './modules/slider_first';
+import sliderProject from './modules/slider_project';
+import swiperLogo from './modules/swiper_logo';
 
 
-slider_main();
-slider_1();
-slider_2();
+sliderFirst();
+sliderProject();
+swiperLogo();
 mobileMenu();

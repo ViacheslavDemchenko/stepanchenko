@@ -1,8 +1,8 @@
 import Swiper from './../libs/swiper-bundle.min.js'; // Слайдер
 
-export default function slider_main() {
-  if(document.querySelector('.slider_main')) {
-    const swiper = new Swiper('.slider_main', {
+export default function sliderFirst() {
+  if(document.querySelector('.swiper_first')) {
+    const swiper = new Swiper('.swiper_first', {
       spaceBetween: 0,
       loopedSlides: 1,
       slidesPerView: 1,

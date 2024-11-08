@@ -1,9 +1,9 @@
 import Swiper from './../libs/swiper-bundle.min.js'; // Слайдер
 
-export default function slider_1() {
-  if(document.querySelector('.slider_1')) {
-    const swiper = new Swiper('.slider_1', {
-      slidesPerView: 4.5,
+export default function sliderProject() {
+  if(document.querySelector('.slider_project')) {
+    const swiper = new Swiper('.slider_project', {
+      slidesPerView: 4,
       spaceBetween: 40,
       loopedSlides: 1,
       // loop: true,
@@ -22,7 +22,7 @@ export default function slider_1() {
           spaceBetween: 20
         },
         1440: {
-          slidesPerView: 4.5,
+          slidesPerView: 4,
           spaceBetween: 40
         }
       }

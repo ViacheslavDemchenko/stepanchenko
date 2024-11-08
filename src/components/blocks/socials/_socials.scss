@@ -6,18 +6,12 @@
     margin-bottom: 0;
   }
 
-  li {
+  &__item {
 
-    a {
+    &__link {
       height: 4rem;
       width: 4rem;
       display: block;
-      fill: var(--gray_2);
-
-      svg {
-        height: 100%;
-        width: 100%;
-      }
     }
   } 
 }
